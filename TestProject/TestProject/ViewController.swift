@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var btn: UIButton!
+    
+    var dataArr: [CarInfoModel] {
+        return DataProvider.shared.getData()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func btnAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "DetailsVC") as! DetailsViewController
+        
+        vc.model = dataArr.first
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

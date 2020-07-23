@@ -9,6 +9,11 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - Realm (5.0.0):
+    - Realm/Headers (= 5.0.0)
+  - Realm/Headers (5.0.0)
+  - RealmSwift (5.0.0):
+    - Realm (= 5.0.0)
   - Result (4.1.0)
   - SwiftyJSON (5.0.0)
 
@@ -16,6 +21,7 @@ DEPENDENCIES:
   - IHProgressHUD
   - Kingfisher
   - Moya (~> 13.0)
+  - RealmSwift
   - SwiftyJSON
 
 SPEC REPOS:
@@ -24,6 +30,8 @@ SPEC REPOS:
     - IHProgressHUD
     - Kingfisher
     - Moya
+    - Realm
+    - RealmSwift
     - Result
     - SwiftyJSON
 
@@ -32,9 +40,11 @@ SPEC CHECKSUMS:
   IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Realm: 76066d333de26f97e9caedaa85ee3ff4a62ca265
+  RealmSwift: c1bdff09b422569dc6881410d9ccf712bcdb79b0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5c837a32ec7417e5eb7713e6799bf6ed3c0d85ed
+PODFILE CHECKSUM: 22e72383a77de8b83d941b8c1b7ef3870256c7f1
 
 COCOAPODS: 1.9.1

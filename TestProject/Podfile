@@ -11,5 +11,6 @@ pod 'Kingfisher'
   pod 'Moya', '~> 13.0'
   pod 'IHProgressHUD'
   pod 'SwiftyJSON'
+  pod 'RealmSwift'
 
 end
