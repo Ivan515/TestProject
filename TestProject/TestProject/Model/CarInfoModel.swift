@@ -125,4 +125,11 @@ extension CarInfoModel {
     func makePhotosCountString() -> String {
         return "\(images.count) Photos"
     }
+    
+    func makeCurrentProgressPercent() -> Float {
+        if let progress = progress?.current {
+            return Float(progress)/100
+        }
+        return 0
+    }
 }

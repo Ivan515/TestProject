@@ -33,7 +33,7 @@ extension DataProvider {
     private func checkForImages(modelsFromJson: [CarInfoModel]) {
         for model in modelsFromJson {
             for image in model.images {
-                checkImages(model: image)
+//                checkImages(model: image)
             }
         }
     }

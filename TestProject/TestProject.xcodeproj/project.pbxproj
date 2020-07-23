@@ -21,6 +21,7 @@
 		AB9507C624C8878E0030CD62 /* SmallInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9507C524C8878E0030CD62 /* SmallInfoTableCell.swift */; };
 		AB9507C824C89FE90030CD62 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */; };
 		AB9507CB24C8B8880030CD62 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */; };
+		ABA6EFD024CA041700383FCD /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */; };
 		ABE7E0B524C6321D00E2FB88 /* listings-temp.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE7E0B424C6321D00E2FB88 /* listings-temp.json */; };
 		ABE7E0B724C634B900E2FB88 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B624C634B900E2FB88 /* DataProvider.swift */; };
 		ABE7E0BA24C6358700E2FB88 /* CarInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */; };
@@ -56,6 +57,7 @@
 		AB9507C524C8878E0030CD62 /* SmallInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallInfoTableCell.swift; sourceTree = "<group>"; };
 		AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		ABE7E0B424C6321D00E2FB88 /* listings-temp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "listings-temp.json"; sourceTree = "<group>"; };
 		ABE7E0B624C634B900E2FB88 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoModel.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				ABE7E0D224C648BA00E2FB88 /* General */,
 				ABE7E0C724C6479800E2FB88 /* Details */,
+				ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				ABE7E0CE24C6480F00E2FB88 /* DetailsLayoutManager.swift in Sources */,
 				ABE7E0B724C634B900E2FB88 /* DataProvider.swift in Sources */,
 				AB9507CB24C8B8880030CD62 /* DatabaseManager.swift in Sources */,
+				ABA6EFD024CA041700383FCD /* CustomProgressView.swift in Sources */,
 				ABE7E0BA24C6358700E2FB88 /* CarInfoModel.swift in Sources */,
 				ABE7E0D824C64B9A00E2FB88 /* UICollectionView+Extension.swift in Sources */,
 				ABE7E0C524C6390700E2FB88 /* AddressModel.swift in Sources */,

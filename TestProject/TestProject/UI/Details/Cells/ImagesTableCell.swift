@@ -54,11 +54,9 @@ extension ImagesTableCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(ofType: ImageCollectionCell.self, indexPath: indexPath)
-//        cell.set(imageURL: imagesArr[indexPath.row].urlString)
         ImageService.shared.getImageFor(model: imagesArr[indexPath.row]) { (photo) in
             cell.set(image: photo)
         }
-//        cell.set(imageURL: imagesArr[indexPath.row].image)
         return cell
     }
     
@@ -68,4 +66,9 @@ extension ImagesTableCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 250)
     }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pageControll.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
 }
+

@@ -15,13 +15,19 @@ class ImageService {
     static let shared = ImageService()
     private let db = DatabaseManager.shared
     
+    let queue = DispatchQueue(label: "com.ai.test", qos: .userInitiated, attributes: .concurrent)
+    let semaphore = DispatchSemaphore(value: 1)
+    
     func getImageFor(model: ImageModel, completion: @escaping (_ image: UIImage?) ->()) {
         if let imageFromDB = db.getImageWith(id: model.urlString ?? "") {
             completion(imageFromDB)
             return
         }
-        downloadimages(model: model) { (downloadedImage) in
-            completion(downloadedImage)
+        
+        queue.async {
+            self.downloadimages(model: model) { (downloadedImage) in
+                completion(downloadedImage)
+            }
         }
     }
 }
@@ -29,10 +35,17 @@ class ImageService {
 extension ImageService {
     private func downloadimages(model: ImageModel, completion: @escaping (_ image: UIImage?) -> ()) {
         guard let urlString = model.urlString else {
+            completion(nil)
             return
         }
+        if model.imageData != nil {
+            completion(nil)
+            return
+        }
+        
         let downloader = ImageDownloader.default
         downloader.downloadImage(with: URL(string: urlString)!) {result in
+            self.semaphore.wait()
             switch result {
             case .success(let value):
                 print(value.image)
@@ -41,6 +54,7 @@ extension ImageService {
                 model.imageData = data as NSData?
                 DatabaseManager.shared.saveImage(model: model)
                 completion(value.image)
+                self.semaphore.signal()
             case .failure(let error):
                 print(error)
             }

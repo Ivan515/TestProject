@@ -96,7 +96,7 @@
                                                 </collectionView>
                                                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-Wm-UMX">
                                                     <rect key="frame" x="187.5" y="179" width="39" height="37"/>
-                                                    <color key="pageIndicatorTintColor" red="0.017917811870000001" green="0.58157038689999996" blue="0.49411076310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="currentPageIndicatorTintColor" red="0.99737995859999995" green="0.31405720110000002" blue="0.34507602450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </pageControl>
                                             </subviews>
@@ -295,11 +295,11 @@
                                             <outlet property="textLbl" destination="MkK-FH-w0m" id="vys-07-vSD"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgressTableCell" rowHeight="64" id="gAw-Bw-oQh" customClass="ProgressTableCell" customModule="TestProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="458" width="414" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProgressTableCell" rowHeight="74" id="gAw-Bw-oQh" customClass="ProgressTableCell" customModule="TestProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="458" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gAw-Bw-oQh" id="Oxq-1P-w4G">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completion Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4t-sK-0RP">
@@ -309,10 +309,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsM-wq-vnG">
-                                                    <rect key="frame" x="16" y="52" width="382" height="4"/>
-                                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="16" y="52" width="382" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="4" id="Fzb-W5-vJs"/>
+                                                        <constraint firstAttribute="height" constant="10" id="Fzb-W5-vJs"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBW-Qe-zCx">
@@ -331,16 +331,17 @@
                                                 <constraint firstItem="i4t-sK-0RP" firstAttribute="leading" secondItem="jsM-wq-vnG" secondAttribute="leading" id="k6n-NE-Kj0"/>
                                                 <constraint firstItem="xBW-Qe-zCx" firstAttribute="centerY" secondItem="i4t-sK-0RP" secondAttribute="centerY" id="oC6-q4-ewN"/>
                                                 <constraint firstItem="i4t-sK-0RP" firstAttribute="top" secondItem="Oxq-1P-w4G" secondAttribute="top" constant="16.5" id="xIZ-gk-ZZK"/>
-                                                <constraint firstAttribute="bottom" secondItem="jsM-wq-vnG" secondAttribute="bottom" constant="8" id="xOp-4H-wb5"/>
+                                                <constraint firstAttribute="bottom" secondItem="jsM-wq-vnG" secondAttribute="bottom" constant="12" id="xOp-4H-wb5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="percentLbl" destination="xBW-Qe-zCx" id="BZh-Yz-bZ3"/>
+                                            <outlet property="progressView" destination="jsM-wq-vnG" id="1Cx-0u-Mjz"/>
                                             <outlet property="titleLbl" destination="i4t-sK-0RP" id="EJ7-72-VbT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmallInfoTableCell" rowHeight="64" id="HLH-9s-lx9" customClass="SmallInfoTableCell" customModule="TestProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="522" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="532" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HLH-9s-lx9" id="uaZ-Yj-hQR">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>

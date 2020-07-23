@@ -12,5 +12,4 @@ pod 'Kingfisher'
   pod 'IHProgressHUD'
   pod 'SwiftyJSON'
   pod 'RealmSwift'
-
 end
