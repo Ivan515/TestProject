@@ -42,7 +42,7 @@
         <!--Details View Controller-->
         <scene sceneID="ZeG-Sx-7C7">
             <objects>
-                <viewController storyboardIdentifier="DetailsVC" id="WgN-if-Rdu" customClass="DetailsViewController" customModule="TestProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="WgN-if-Rdu" customClass="DetailsViewController" customModule="TestProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3cB-d5-qbb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

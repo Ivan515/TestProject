@@ -20,7 +20,7 @@ class GeneralViewController: UIViewController {
     }
     
     public func openDetailsFor(model: CarInfoModel) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsViewController
+        guard let vc = storyboard?.instantiate(DetailsViewController.self) else {return}
         vc.model = model
         navigationController?.pushViewController(vc, animated: true)
     }

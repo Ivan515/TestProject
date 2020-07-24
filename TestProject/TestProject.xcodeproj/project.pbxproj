@@ -25,6 +25,7 @@
 		ABA6EFD624CA055A00383FCD /* GeneralLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFD524CA055A00383FCD /* GeneralLayoutManager.swift */; };
 		ABA6EFDB24CAE02900383FCD /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */; };
 		ABA6EFDD24CAE04700383FCD /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */; };
+		ABA6EFE224CAE35300383FCD /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFE124CAE35300383FCD /* UIStoryboard+Extension.swift */; };
 		ABE7E0B524C6321D00E2FB88 /* listings-temp.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE7E0B424C6321D00E2FB88 /* listings-temp.json */; };
 		ABE7E0B724C634B900E2FB88 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B624C634B900E2FB88 /* DataProvider.swift */; };
 		ABE7E0BA24C6358700E2FB88 /* CarInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */; };
@@ -64,6 +65,7 @@
 		ABA6EFD524CA055A00383FCD /* GeneralLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLayoutManager.swift; sourceTree = "<group>"; };
 		ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
 		ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
+		ABA6EFE124CAE35300383FCD /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		ABE7E0B424C6321D00E2FB88 /* listings-temp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "listings-temp.json"; sourceTree = "<group>"; };
 		ABE7E0B624C634B900E2FB88 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoModel.swift; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 			children = (
 				ABE7E0D524C64B7F00E2FB88 /* Core */,
 				ABE7E0C624C6474C00E2FB88 /* UI */,
-				ABE7E0B824C6355000E2FB88 /* Model */,
+				ABE7E0B824C6355000E2FB88 /* Models */,
 				AB7D470824C6263C001919F9 /* AppDelegate.swift */,
 				AB7D470A24C6263C001919F9 /* SceneDelegate.swift */,
 				AB7D470E24C6263C001919F9 /* Main.storyboard */,
@@ -151,13 +153,21 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		ABE7E0B824C6355000E2FB88 /* Model */ = {
+		ABA6EFDE24CAE0F800383FCD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		ABE7E0B824C6355000E2FB88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */,
 				ABE7E0BB24C6373700E2FB88 /* SubModels */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		ABE7E0BB24C6373700E2FB88 /* SubModels */ = {
@@ -176,7 +186,6 @@
 			children = (
 				ABE7E0D224C648BA00E2FB88 /* General */,
 				ABE7E0C724C6479800E2FB88 /* Details */,
-				ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -232,6 +241,7 @@
 		ABE7E0D524C64B7F00E2FB88 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ABA6EFDE24CAE0F800383FCD /* CustomView */,
 				ABE7E0D624C64B8200E2FB88 /* Extensions */,
 				AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */,
 				AB29B08324C8B8F80016848E /* ImageService.swift */,
@@ -249,6 +259,7 @@
 				AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */,
 				ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */,
 				ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */,
+				ABA6EFE124CAE35300383FCD /* UIStoryboard+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 				ABE7E0BF24C637D400E2FB88 /* ProgressModel.swift in Sources */,
 				ABE7E0D424C64A5200E2FB88 /* ImageCollectionCell.swift in Sources */,
 				ABE7E0D124C6487600E2FB88 /* ImagesTableCell.swift in Sources */,
+				ABA6EFE224CAE35300383FCD /* UIStoryboard+Extension.swift in Sources */,
 				AB7DD25724C84D110096C711 /* OneLabelTableCell.swift in Sources */,
 				AB7DD25524C75F990096C711 /* GeneralInfoTableCell.swift in Sources */,
 				AB29B08424C8B8F80016848E /* ImageService.swift in Sources */,
