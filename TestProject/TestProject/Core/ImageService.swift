@@ -15,7 +15,6 @@ class ImageService {
     static let shared = ImageService()
     private let db = DatabaseManager.shared
     
-    let queue = DispatchQueue(label: "com.ai.test", qos: .userInitiated, attributes: .concurrent)
     let semaphore = DispatchSemaphore(value: 1)
     
     func getImageFor(model: ImageModel, completion: @escaping (_ image: UIImage?) ->()) {
@@ -24,7 +23,7 @@ class ImageService {
             return
         }
         
-        queue.async {
+        DispatchQueue.main.async {
             self.downloadimages(model: model) { (downloadedImage) in
                 completion(downloadedImage)
             }
@@ -57,6 +56,7 @@ extension ImageService {
                 self.semaphore.signal()
             case .failure(let error):
                 print(error)
+                completion(nil)
             }
         }
     }

@@ -29,8 +29,15 @@ class ImagesTableCell: UITableViewCell {
 
 extension ImagesTableCell {
     private func configure() {
+        configureCollection()
+        
         pageControll.numberOfPages = imagesArr.count
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    private func configureCollection() {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         
@@ -40,10 +47,8 @@ extension ImagesTableCell {
         layout.itemSize = size
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
-        collectionView.setCollectionViewLayout(layout, animated: true)
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionView.setCollectionViewLayout(layout, animated: true)
     }
 }
 

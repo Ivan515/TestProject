@@ -30,7 +30,6 @@ extension DatabaseManager {
         if let imgData = realm.objects(ImageModel.self).filter(predicate).first?.imageData {
             return UIImage(data: imgData as Data)
         }
-        let aa = realm.object(ofType: ImageModel.self, forPrimaryKey: id)
         
         return nil
     }

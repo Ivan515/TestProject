@@ -20,6 +20,7 @@ class ImageCollectionCell: UICollectionViewCell {
     
     public func set(image: UIImage?) {
         imageView.image = image
+        imageView.kf.indicator?.stopAnimatingView()
     }
     
 }

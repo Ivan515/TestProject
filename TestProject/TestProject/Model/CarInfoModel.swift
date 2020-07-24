@@ -76,7 +76,6 @@ class CarInfoModel: Codable {
         }
         
         owner = try values.decodeIfPresent(OwnerModel.self, forKey: .owner)
-//        addresses
         make = try values.decodeIfPresent(String.self, forKey: .make)
         model = try values.decodeIfPresent(String.self, forKey: .model)
         year = try values.decodeIfPresent(Int.self, forKey: .year) ?? 0
@@ -90,7 +89,7 @@ class CarInfoModel: Codable {
 
 extension CarInfoModel {
     func makeCarPrice() -> String {
-        return "$\(price)" //сделать разделение по тысячам
+        return "$\(price.formattedWithSeparator)"
     }
     
     func makeCarTitle() -> String {

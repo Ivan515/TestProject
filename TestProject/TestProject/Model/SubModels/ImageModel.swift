@@ -25,13 +25,19 @@ class ImageModel: Object, Codable {
     enum CodingKeys: String, CodingKey {
         case id
         case uri
+        case url
     }
     
     required convenience init(from decoder: Decoder) throws {
         self.init()
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decodeIfPresent(String.self, forKey: .id)
-        urlString = try values.decodeIfPresent(String.self, forKey: .uri)
+        if let urlValue = try values.decodeIfPresent(String.self, forKey: .url) {
+            urlString = urlValue
+        }
+        if let uriValue = try values.decodeIfPresent(String.self, forKey: .uri) {
+            urlString = uriValue
+        }
     }
     
     func encode(to encoder: Encoder) throws {

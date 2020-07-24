@@ -11,7 +11,6 @@
 		AB29B08424C8B8F80016848E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29B08324C8B8F80016848E /* ImageService.swift */; };
 		AB7D470924C6263C001919F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D470824C6263C001919F9 /* AppDelegate.swift */; };
 		AB7D470B24C6263C001919F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D470A24C6263C001919F9 /* SceneDelegate.swift */; };
-		AB7D470D24C6263C001919F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D470C24C6263C001919F9 /* ViewController.swift */; };
 		AB7D471024C6263C001919F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D470E24C6263C001919F9 /* Main.storyboard */; };
 		AB7D471224C6263C001919F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7D471124C6263C001919F9 /* Assets.xcassets */; };
 		AB7D471524C6263C001919F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D471324C6263C001919F9 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,10 @@
 		AB9507C824C89FE90030CD62 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */; };
 		AB9507CB24C8B8880030CD62 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */; };
 		ABA6EFD024CA041700383FCD /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */; };
+		ABA6EFD424CA053300383FCD /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFD324CA053300383FCD /* GeneralViewController.swift */; };
+		ABA6EFD624CA055A00383FCD /* GeneralLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFD524CA055A00383FCD /* GeneralLayoutManager.swift */; };
+		ABA6EFDB24CAE02900383FCD /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */; };
+		ABA6EFDD24CAE04700383FCD /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */; };
 		ABE7E0B524C6321D00E2FB88 /* listings-temp.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE7E0B424C6321D00E2FB88 /* listings-temp.json */; };
 		ABE7E0B724C634B900E2FB88 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B624C634B900E2FB88 /* DataProvider.swift */; };
 		ABE7E0BA24C6358700E2FB88 /* CarInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */; };
@@ -46,7 +49,6 @@
 		AB7D470524C6263C001919F9 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7D470824C6263C001919F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB7D470A24C6263C001919F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB7D470C24C6263C001919F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB7D470F24C6263C001919F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB7D471124C6263C001919F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7D471424C6263C001919F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		ABA6EFCF24CA041700383FCD /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		ABA6EFD324CA053300383FCD /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		ABA6EFD524CA055A00383FCD /* GeneralLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLayoutManager.swift; sourceTree = "<group>"; };
+		ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
 		ABE7E0B424C6321D00E2FB88 /* listings-temp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "listings-temp.json"; sourceTree = "<group>"; };
 		ABE7E0B624C634B900E2FB88 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		ABE7E0B924C6358700E2FB88 /* CarInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoModel.swift; sourceTree = "<group>"; };
@@ -120,15 +126,29 @@
 				ABE7E0B824C6355000E2FB88 /* Model */,
 				AB7D470824C6263C001919F9 /* AppDelegate.swift */,
 				AB7D470A24C6263C001919F9 /* SceneDelegate.swift */,
-				AB7D470C24C6263C001919F9 /* ViewController.swift */,
 				AB7D470E24C6263C001919F9 /* Main.storyboard */,
 				AB7D471124C6263C001919F9 /* Assets.xcassets */,
 				AB7D471324C6263C001919F9 /* LaunchScreen.storyboard */,
 				AB7D471624C6263C001919F9 /* Info.plist */,
 				ABE7E0B424C6321D00E2FB88 /* listings-temp.json */,
-				ABE7E0B624C634B900E2FB88 /* DataProvider.swift */,
 			);
 			path = TestProject;
+			sourceTree = "<group>";
+		};
+		ABA6EFD124CA051D00383FCD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABA6EFD324CA053300383FCD /* GeneralViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ABA6EFD224CA052200383FCD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				ABA6EFD524CA055A00383FCD /* GeneralLayoutManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		ABE7E0B824C6355000E2FB88 /* Model */ = {
@@ -203,6 +223,8 @@
 		ABE7E0D224C648BA00E2FB88 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				ABA6EFD224CA052200383FCD /* Manager */,
+				ABA6EFD124CA051D00383FCD /* ViewController */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -213,6 +235,7 @@
 				ABE7E0D624C64B8200E2FB88 /* Extensions */,
 				AB9507CA24C8B8880030CD62 /* DatabaseManager.swift */,
 				AB29B08324C8B8F80016848E /* ImageService.swift */,
+				ABE7E0B624C634B900E2FB88 /* DataProvider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -224,6 +247,8 @@
 				ABE7E0D924C64C6900E2FB88 /* NSObject+Extension.swift */,
 				ABE7E0DB24C64C8700E2FB88 /* UITableView+Extension.swift */,
 				AB9507C724C89FE90030CD62 /* UIImage+Extension.swift */,
+				ABA6EFDA24CAE02900383FCD /* Formatter+Extension.swift */,
+				ABA6EFDC24CAE04700383FCD /* Numeric+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,18 +380,21 @@
 			files = (
 				AB9507C624C8878E0030CD62 /* SmallInfoTableCell.swift in Sources */,
 				AB7DD25924C84D890096C711 /* ProgressTableCell.swift in Sources */,
+				ABA6EFD624CA055A00383FCD /* GeneralLayoutManager.swift in Sources */,
 				ABE7E0BF24C637D400E2FB88 /* ProgressModel.swift in Sources */,
-				AB7D470D24C6263C001919F9 /* ViewController.swift in Sources */,
 				ABE7E0D424C64A5200E2FB88 /* ImageCollectionCell.swift in Sources */,
 				ABE7E0D124C6487600E2FB88 /* ImagesTableCell.swift in Sources */,
 				AB7DD25724C84D110096C711 /* OneLabelTableCell.swift in Sources */,
 				AB7DD25524C75F990096C711 /* GeneralInfoTableCell.swift in Sources */,
 				AB29B08424C8B8F80016848E /* ImageService.swift in Sources */,
+				ABA6EFDB24CAE02900383FCD /* Formatter+Extension.swift in Sources */,
 				AB7D470924C6263C001919F9 /* AppDelegate.swift in Sources */,
 				ABE7E0DA24C64C6900E2FB88 /* NSObject+Extension.swift in Sources */,
 				ABE7E0CE24C6480F00E2FB88 /* DetailsLayoutManager.swift in Sources */,
+				ABA6EFD424CA053300383FCD /* GeneralViewController.swift in Sources */,
 				ABE7E0B724C634B900E2FB88 /* DataProvider.swift in Sources */,
 				AB9507CB24C8B8880030CD62 /* DatabaseManager.swift in Sources */,
+				ABA6EFDD24CAE04700383FCD /* Numeric+Extension.swift in Sources */,
 				ABA6EFD024CA041700383FCD /* CustomProgressView.swift in Sources */,
 				ABE7E0BA24C6358700E2FB88 /* CarInfoModel.swift in Sources */,
 				ABE7E0D824C64B9A00E2FB88 /* UICollectionView+Extension.swift in Sources */,

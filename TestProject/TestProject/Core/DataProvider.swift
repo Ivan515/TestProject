@@ -22,7 +22,6 @@ class DataProvider: NSObject {
         var arr = [CarInfoModel]()
         
         guard let modelsFromJson = getArrayFromJSON(type: CarInfoModel()) else {return arr}
-        checkForImages(modelsFromJson: modelsFromJson)
         arr.append(contentsOf: modelsFromJson)
         
         return arr
@@ -30,20 +29,6 @@ class DataProvider: NSObject {
 }
 
 extension DataProvider {
-    private func checkForImages(modelsFromJson: [CarInfoModel]) {
-        for model in modelsFromJson {
-            for image in model.images {
-//                checkImages(model: image)
-            }
-        }
-    }
-    
-    private func checkImages(model: ImageModel) {
-        ImageService.shared.getImageFor(model: model) { (image) in
-            
-        }
-    }
-    
     private func getArrayFromJSON<ModelType: Decodable>(type: ModelType) -> [ModelType]? {
         if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
             do {
