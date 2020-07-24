@@ -14,4 +14,8 @@ extension UIStoryboard {
             fatalError("Could not instantiate view controller \(T.self)") }
         return vc
     }
+    
+    public static var main: UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
 }
